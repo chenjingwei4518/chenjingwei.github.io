@@ -10,14 +10,17 @@
 ##### 使用+号转换时间戳或数字  
 
 ```javaScript
+
 var time = + new Date();
 var a = '-123';
 console.log(+a); // -123
+
 ```
 
 ##### 数组传递和复制
 
 ```javaScript
+
 var a = [1,2,3];  
 var b = a;    
 delete b[i];
@@ -127,11 +130,13 @@ for(var i = 0; i < 10; i++) {
 ##### 位移符的应用
 
 ```javaScript
+
 var num = 10 >> 1; // 相当于10 / 2，但是效率更高 
 console.log(num) // 5;
 
 var num = 2 << 3; // 2的四次方
 console.log(num) // 16;
+
 ```
 
 ##### 通过字符串调用方法
