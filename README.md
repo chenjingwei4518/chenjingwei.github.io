@@ -1,11 +1,14 @@
 #### **JavaScript奇技淫巧**  
 ***
+
 ##### 正数向下取整
+
 `var a = ~~1.2;  //1`   
 或  
 `var a = 3.4>>0; //3 `
 
 ##### 使用+号转换时间戳或数字  
+
 ```javaScript
 var time = + new Date();
 var a = '-123';
@@ -13,6 +16,7 @@ console.log(+a); // -123
 ```
 
 ##### 数组传递和复制
+
 ```javaScript
 var a = [1,2,3];  
 var b = a;    
@@ -26,6 +30,7 @@ console.log(a);//[4,5,6]
 console.log(b);//[4, undefined × 1,6]
 ```
 ##### 字符串拼接
+
 ```javaScript
 2.toString();//SyntaxError
 2 .toString(); //"2"
@@ -35,7 +40,9 @@ console.log(b);//[4, undefined × 1,6]
 [1,[2,"abc","",0,null,undefined,false,NaN],3].toString();
 
 ```
+
 ##### for in 暴露原型链属性
+
 ```javaScript
 Object.prototype.foo = 1;
 
@@ -47,6 +54,7 @@ for(var p in obj){
 }
 ```
 ##### 不使用第三变量交换值
+
 `a= [b, b=a][0];`
 
 ##### 将一个数组插入另一个数组的指定位置
