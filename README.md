@@ -58,6 +58,7 @@ for(var p in obj){
 `a= [b, b=a][0];`
 
 ##### 将一个数组插入另一个数组的指定位置
+
 ```javaScript
 var a = [1,2,3,7,8,9];
 var b = [4,5,6];
@@ -66,12 +67,15 @@ a.splice.apply(a, Array.concat(insertIndex, 0, b));
 // a: 1,2,3,4,5,6,7,8,9
 
 ```
+
 ##### 快速取数组最大和最小值
+
 ```javaScript
 Math.max.apply(Math, [1,2,3]); //3
 Math.min.apply(Math, [1,2,3]); //1
 ```
 ##### 条件判断
+
 ```javaScript
 var a = b && 1;
 //相当于:
@@ -91,9 +95,11 @@ if (b) {
 ```
 
 ##### 判断浏览器是否为IE
+
 `var ie = /*@cc_on !@*/false;`
 
 ##### 将变量转换成Boolean类型
+
 ```
 var a = 1;
 console.log(!!a) //true
@@ -117,7 +123,9 @@ for(var i = 0; i < 10; i++) {
 }
 
 ```
+
 ##### 位移符的应用
+
 ```javaScript
 var num = 10 >> 1; // 相当于10 / 2，但是效率更高 
 console.log(num) // 5;
@@ -127,6 +135,7 @@ console.log(num) // 16;
 ```
 
 ##### 通过字符串调用方法
+
 ```javaSript
 function sayHello(str) {
    return 'hello ' + str;
@@ -139,6 +148,7 @@ console.log(fn('world')); // hello world
 ```
 
 ##### 去除数组中重复的值
+
 ```javaScript
 function removeRepeat(arr){
   return arr.filter(function(elem, pos) {
